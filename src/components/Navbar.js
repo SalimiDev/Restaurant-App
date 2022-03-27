@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
             <div className='rightSide'>
                 <Link to='./'>Home</Link>
-                <Link to='./'>Menu</Link>
+                <Link to='./menu'>Menu</Link>
                 <Link to='./'>About</Link>
                 <Link to='./'>Contact</Link>
                 <button onClick={toggleNavbar}>
