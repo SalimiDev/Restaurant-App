@@ -10,6 +10,15 @@ const Navbar = () => {
     const toggleNavbar = () => {
         setShowMenu(!showMenu);
     };
+    //handling show or hidden the menu with resizing browser
+    const pageWidth = window.matchMedia('(min-width: 600px)');
+    const handleMenu = () => {
+        if (pageWidth.matches) {
+            setShowMenu(false);
+        }
+    };
+    pageWidth.addListener(handleMenu);
+
     return (
         <div className='navbar'>
             <div className='leftSide' id={showMenu ? 'open' : 'close'}>
