@@ -9,7 +9,7 @@ const Home = () => {
             <header className='headerContainer'>
                 <h1>Food Corner</h1>
                 <p>WORLD'S MOST DELICIOUS FOODS</p>
-                <Link to='/'>
+                <Link to='/menu'>
                     <button>Order Now</button>
                 </Link>
             </header>
